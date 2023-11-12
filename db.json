@@ -1,0 +1,55 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "json-server",
+            "author": "typicode"
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    },
+    "user": [
+        {
+            "userName": "userName 1",
+            "passWord": "passWord 1",
+            "userId": "1"
+        },
+        {
+            "userName": "userName 2",
+            "passWord": "passWord 2",
+            "userId": "2"
+        }
+    ],
+    "note": [
+        {
+            "notes": [
+                {
+                    "title": "go to market"
+                },
+                {
+                    "title1": "do something"
+                }
+            ],
+            "userId": "1"
+        },
+        {
+            "notes": [
+                {
+                    "title": "go to market"
+                },
+                {
+                    "title1": "do something"
+                }
+            ],
+            "userId": "2"
+        }
+    ]
+}

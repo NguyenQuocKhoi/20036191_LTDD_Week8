@@ -15,7 +15,7 @@ export default function Screen1({navigation}) {
       const checkLogin = (userName, password) => {
         const user = data.find((item) => item.username === userName && item.password === password);
         if (user) {
-            navigation.navigate("Screen3");
+            navigation.navigate("Screen3",{user: user});
         } else {
           alert("Wrong username or password");    
         }

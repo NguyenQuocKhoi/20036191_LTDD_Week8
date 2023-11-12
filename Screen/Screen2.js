@@ -12,11 +12,11 @@ export default function Screen2({ navigation }) {
   const [username, setUserName] = useState("");
   const [password, setpassWord] = useState("");
   const [phone, setPhone] = useState("");
-  const addUser = (userName, password, phone) => {
+  const addUser = (username, password, phone) => {
     fetch("https://6549fd95e182221f8d524817.mockapi.io/user", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userName, password, phone }),
+      body: JSON.stringify({ username, password, phone }),
     })
       .then((response) => response.json())
       .then((json) => console.log(json))

@@ -21,8 +21,6 @@ export default function Screen2({ navigation }) {
       .then((response) => response.json())
       .then((json) => console.log(json))
       .catch((error) => console.log(error));
-      
-    navigation.navigate("Screen1");
   };
   return (
     <View style={styles.container}>

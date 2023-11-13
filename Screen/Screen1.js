@@ -15,7 +15,7 @@ export default function Screen1({navigation}) {
       const checkLogin = (userName, password) => {
         const user = data.find((item) => item.username === userName && item.password === password);
         if (user) {
-            navigation.navigate("Screen3",{user: user});
+            navigation.navigate("Screen3",{user});
         } else {
           alert("Wrong username or password");    
         }
@@ -79,13 +79,11 @@ const styles = StyleSheet.create({
   textH:{
     fontSize:'21px',
     fontWeight:'400',
-    fontFamily:'Trebuchet MS',
     textAlign:'center',
     marginTop:'10px',
   },
 
   text1H:{
-    fontFamily:'Sakkal Majalla',
     fontSize:'16px',
     fontWeight:"400",
     color:'#6B5E5E',
@@ -94,7 +92,6 @@ const styles = StyleSheet.create({
   },
 
   text2H:{
-    fontFamily:'Sakkal Majalla',
     fontSize:'16px',
     fontWeight:"400",
     color:'#036BB9',
@@ -117,7 +114,6 @@ const styles = StyleSheet.create({
   textIC:{
     width:'312px',
     height:'47px',
-    fontFamily:'Trebuchet MS',
     fontSize:'15px',
     fontWeight:'400'
   },
